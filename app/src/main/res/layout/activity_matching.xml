@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_matching"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="net.androidbootcamp.haiquizapp.matchingActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tvQuestion"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="Match all the attributes that describe Hai."
+        android:textSize="30sp" />
+
+    <TextView
+        android:text="What is my hair color?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvQuestion"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvAttribut1"
+        android:textSize="24sp"
+        android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAttribut1"
+        android:id="@+id/spinner2"
+        android:entries="@array/answerGrp1" />
+
+    <TextView
+        android:text="How tall am I?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvAttribut2"
+        android:textSize="24sp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAttribut2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/spinner3"
+        android:entries="@array/answerGrp2" />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnSubmit"
+        android:textSize="24sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/btnSubmit"
+        android:layout_alignRight="@+id/tvAttribut1"
+        android:layout_alignEnd="@+id/tvAttribut1"
+        android:layout_marginTop="43dp"
+        android:id="@+id/etAnswer"
+        android:hint="answer" />
+</RelativeLayout>
